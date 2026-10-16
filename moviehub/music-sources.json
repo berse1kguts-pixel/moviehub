@@ -1,0 +1,23 @@
+{
+  "comment": "音乐音源配置：洛雪自定义源脚本（.js 在线地址）。服务启动后按需下载并缓存到 .cache/lx-sources/，失效换下一个 URL 即可。platforms 由脚本运行时声明为准，这里仅作备注。",
+  "scripts": [
+    {
+      "id": "sixyin",
+      "name": "六音音源",
+      "url": "https://raw.githubusercontent.com/pdone/lx-music-source/main/sixyin/latest.js",
+      "enabled": true
+    },
+    {
+      "id": "huibq",
+      "name": "Huibq音源",
+      "url": "https://raw.githubusercontent.com/pdone/lx-music-source/main/huibq/latest.js",
+      "enabled": true
+    },
+    {
+      "id": "gdstudio",
+      "name": "GD音源（备用）",
+      "url": "https://raw.githubusercontent.com/wangxanshen/lx-music-source/main/gdstudio-source.js",
+      "enabled": false
+    }
+  ]
+}

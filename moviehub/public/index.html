@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>观影中心</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" id="brand" title="返回首页">
+      <span class="brand-icon">🎬</span><span class="brand-name">观影中心</span>
+    </div>
+    <nav class="nav" id="nav">
+      <button class="nav-btn active" data-nav="home">影视</button>
+      <button class="nav-btn" data-nav="cat">分类</button>
+      <button class="nav-btn" data-nav="music">音乐</button>
+    </nav>
+    <form class="searchbox" id="searchForm">
+      <input id="searchInput" type="text" placeholder="搜索电影、电视剧、综艺、动漫…" autocomplete="off">
+      <select id="srcSelect" title="选择数据源"><option value="">全部源</option></select>
+      <button type="submit" class="btn-primary">搜索</button>
+    </form>
+  </header>
+
+  <main id="main">
+    <section id="view-home" class="view"></section>
+    <section id="view-search" class="view hidden"></section>
+    <section id="view-detail" class="view hidden"></section>
+    <section id="view-player" class="view hidden"></section>
+    <section id="view-music" class="view hidden"></section>
+    <section id="view-cat" class="view hidden"></section>
+  </main>
+
+  <!-- 底部播放条（音乐） -->
+  <footer id="musicbar" class="musicbar hidden">
+    <div class="mb-info">
+      <span class="mb-name" id="mbName">—</span>
+      <span class="mb-singer" id="mbSinger"></span>
+    </div>
+    <div class="mb-ctrl">
+      <button id="mbPrev" class="mb-btn" title="上一首">⏮</button>
+      <button id="mbToggle" class="mb-btn mb-play" title="播放/暂停">▶</button>
+      <button id="mbNext" class="mb-btn" title="下一首">⏭</button>
+      <span class="mb-time" id="mbTime">0:00 / 0:00</span>
+      <input id="mbSeek" class="mb-seek" type="range" min="0" max="1000" value="0">
+    </div>
+    <div class="mb-right">
+      <span id="mbSrc" class="mb-src"></span>
+      <button id="mbMode" class="mb-btn" title="播放模式">🔁</button>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/hls.min.js"></script>
+  <script src="/app.js"></script>
+  <script src="/music.js"></script>
+  <script src="/cat.js"></script>
+</body>
+</html>

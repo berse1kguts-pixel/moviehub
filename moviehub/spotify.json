@@ -1,0 +1,11 @@
+{
+  "clientId": "",
+  "redirectPort": 7123,
+  "librespotPath": "",
+  "autoStartLibrespot": true,
+  "_说明": {
+    "clientId": "到 https://developer.spotify.com/dashboard 创建应用，Web API 勾选后获得；Redirect URI 填 http://127.0.0.1:7123/spotify/callback",
+    "librespotPath": "librespot.exe 路径，留空则自动查找 moviehub/bin/librespot.exe；Windows 无官方预编译包，可 `cargo install librespot` 或用 winget/scoop 安装",
+    "redirectPort": "授权回调端口，改了这里记得同步改 Spotify 后台的 Redirect URI"
+  }
+}

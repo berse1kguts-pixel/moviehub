@@ -1,0 +1,18 @@
+{
+  "name": "moviehub",
+  "version": "1.0.0",
+  "description": "基于 **9 个实测有效的苹果CMS V10 采集接口** 打造的本地影视聚合播放器：一个窗口搜索全网片库，自动换源播放，带历史续播。",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js",
+    "desktop": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "electron": "^44.7.2",
+    "iconv-lite": "^0.7.3"
+  }
+}

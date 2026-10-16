@@ -1,0 +1,20 @@
+{
+  "comment": "观影中心源配置。sources 中每一项：id=唯一标识 name=显示名称 api=苹果CMS V10 采集接口 enabled=false 可停用。前 9 个于 2026-10-16 首批实测，后 6 个为同日复测扩充。",
+  "sources": [
+    { "id": "360zy",   "name": "360资源",  "api": "https://360zy.com/api.php/provide/vod/",        "enabled": true },
+    { "id": "bfzy",    "name": "百度资源", "api": "https://bfzyapi.com/api.php/provide/vod/",       "enabled": true },
+    { "id": "ffzy",    "name": "非凡资源", "api": "https://cj.ffzyapi.com/api.php/provide/vod/",    "enabled": true },
+    { "id": "lzzy",    "name": "量子资源", "api": "https://cj.lziapi.com/api.php/provide/vod/",     "enabled": true },
+    { "id": "snzy",    "name": "索尼资源", "api": "https://suoniapi.com/api.php/provide/vod/",      "enabled": true },
+    { "id": "hhzy",    "name": "哈哈资源", "api": "https://hhzyapi.com/api.php/provide/vod/",       "enabled": true },
+    { "id": "ikunzy",  "name": "iKun资源", "api": "https://ikunzyapi.com/api.php/provide/vod/",     "enabled": true },
+    { "id": "jyzy",    "name": "金鹰资源", "api": "https://jyzyapi.com/api.php/provide/vod/",       "enabled": true },
+    { "id": "wjzy",    "name": "无尽资源", "api": "https://api.wujinapi.net/api.php/provide/vod/",  "enabled": true },
+    { "id": "mtzy",    "name": "MT资源",   "api": "https://mtzy.me/api.php/provide/vod/",           "enabled": true },
+    { "id": "lzzy2",   "name": "量子备用", "api": "https://lzizy1.com/api.php/provide/vod/",        "enabled": true },
+    { "id": "subo",    "name": "速播资源", "api": "https://subocaiji.com/api.php/provide/vod/",    "enabled": true },
+    { "id": "hyzy",    "name": "虎牙资源", "api": "https://www.huyaapi.com/api.php/provide/vod/",  "enabled": true },
+    { "id": "ffzy2",   "name": "非凡备用", "api": "http://ffzy1.tv/api.php/provide/vod/",           "enabled": true },
+    { "id": "ttzy",    "name": "天堂资源", "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/", "enabled": true }
+  ]
+}

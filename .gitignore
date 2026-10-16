@@ -1,0 +1,23 @@
+# 依赖（约 380MB，且含各平台二进制，不入库；按 package.json / package-lock.json 还原）
+node_modules/
+
+# 运行期缓存：下载的音源脚本、分类树采样结果、Spotify token
+.cache/
+
+# 工具与会话数据（截图等）
+.openchamber/
+.vscode/
+.idea/
+
+# 日志与构建产物
+*.log
+npm-debug.log*
+dist/
+out/
+build/
+*.blockmap
+
+# 系统杂物
+Thumbs.db
+desktop.ini
+.DS_Store
